@@ -5,9 +5,17 @@ import './App.css'
 
 function App() {
 
+  const [heading, setHeading] = useState("default text");
+
+  function changeHeading()
+  {
+    setHeading("Altered heading")
+  }
+
   return (
     <>
-      <h1>First test!</h1>
+      <h1>{heading}</h1>
+      <button onClick={changeHeading}>Change Heading</button>
     </>
   )
 }
