@@ -1,4 +1,6 @@
 import {describe, it, expect} from "vitest";
+import { render, screen } from '@testing-library/react';
+import App from "../src/App";
 
 describe("Somthing truthy and falsy", () => {
 
@@ -8,5 +10,13 @@ describe("Somthing truthy and falsy", () => {
 
     it("false to be false", () => {
         expect(false).toBe(false);
+    });
+});
+
+describe("App", () => {
+
+    it("renders headline", () => {
+        render(<App title="React"/>);
+        screen.debug();
     });
 });
