@@ -102,4 +102,4 @@ describe('App', () => {
 });
 ```
 
-10. `npm install @testing-library/user-event --save-dev`
+10. Simulate user interactions `npm install @testing-library/user-event --save-dev`
