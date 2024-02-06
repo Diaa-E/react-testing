@@ -13,10 +13,10 @@ describe("Somthing truthy and falsy", () => {
     });
 });
 
-describe("App", () => {
+describe("App component", () => {
 
-    it("renders headline", () => {
-        render(<App title="React"/>);
-        screen.debug();
+    it("renders correct headinge", () => {
+        render(<App/>);
+        expect(screen.getByRole("heading").textContent).toMatch(/First test!/i);
     });
 });
