@@ -9,7 +9,10 @@ Currently, two official plugins are available:
 
 - [Installing REact test library](https://www.robinwieruch.de/vitest-react-testing-library/)
 
-1. `npm install vitest --save-dev`
+1. 
+```shell
+npm install vitest --save-dev
+```
 2. package.json 
 ```json
 {
@@ -39,7 +42,10 @@ describe('something truthy and falsy', () => {
 });
 ```
 
-4. Enable HTML in Vitest `npm install jsdom --save-dev`
+4. Enable HTML in Vitest 
+```bash
+npm install jsdom --save-dev
+```
 
 5. vite.config.js 
 ```javascript
@@ -54,7 +60,10 @@ export default defineConfig({
   },
 });
 ```
-6. Install react testing library `npm install @testing-library/react @testing-library/jest-dom --save-dev`
+6. Install react testing library 
+```bash
+npm install @testing-library/react @testing-library/jest-dom --save-dev
+```
 
 7. "./tests/setup.js"
 ```javascript
@@ -102,4 +111,7 @@ describe('App', () => {
 });
 ```
 
-10. Simulate user interactions `npm install @testing-library/user-event --save-dev`
+10. Simulate user interactions 
+```bash
+npm install @testing-library/user-event --save-dev
+```
